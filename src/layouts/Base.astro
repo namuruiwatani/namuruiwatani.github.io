@@ -1,0 +1,63 @@
+---
+import '../styles/global.css';
+const { title, description = 'Заметки, размышления и изучения. Без лишнего.' } = Astro.props;
+const full = title ? `${title} · Namuru Iwatani` : 'Namuru Iwatani';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const path = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '') || '/';
+---
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>{full}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
+  <link rel="alternate" type="application/rss+xml" title="Namuru Iwatani" href={`${base}rss.xml`} />
+  <meta property="og:title" content={full} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script is:inline>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href={base}>Namuru Iwatani</a>
+      <nav>
+        <a href={base} aria-current={path === '/' || path.startsWith('/blog') ? 'page' : undefined}>Записи</a>
+        <a href={`${base}about/`} aria-current={path.startsWith('/about') ? 'page' : undefined}>Обо мне</a>
+        <button id="theme" type="button" aria-label="Включить тёмную тему" aria-pressed="false" title="Сменить тему">◐</button>
+      </nav>
+    </header>
+    <main><slot /></main>
+    <footer>© {new Date().getFullYear()} Namuru Iwatani · <a href={`${base}rss.xml`}>RSS</a></footer>
+  </div>
+  <script>
+    const themeButton = document.getElementById('theme');
+    const updateThemeButton = () => {
+      const dark = document.documentElement.dataset.theme
+        ? document.documentElement.dataset.theme === 'dark'
+        : matchMedia('(prefers-color-scheme:dark)').matches;
+      themeButton?.setAttribute('aria-label', dark ? 'Включить светлую тему' : 'Включить тёмную тему');
+      themeButton?.setAttribute('aria-pressed', String(dark));
+    };
+    updateThemeButton();
+    themeButton?.addEventListener('click', () => {
+      const r = document.documentElement;
+      const dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme:dark)').matches;
+      r.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', r.dataset.theme); } catch {}
+      updateThemeButton();
+      setTimeout(() => dispatchEvent(new Event('themechange')), 0);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+<Base title="Не найдено">
+  <article><h1>Здесь ничего нет</h1><div class="body"><p>Такой страницы не существует. <a href={base}>Вернуться к записям</a>.</p></div></article>
+</Base>
