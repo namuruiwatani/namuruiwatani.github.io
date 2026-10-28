@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" role="img" aria-labelledby="title desc" font-family="Arial, sans-serif">
+<title id="title">Подтверждённые события в VR и нейротехнологиях в 2026 году</title>
+<desc id="desc">15 июля опубликовано исследование стимуляции мозга для восстановления осязания; в сентябре Valve открыла очередь бронирования Steam Frame; 23 сентября Meta представила VR Glasses с планом выхода весной 2027 года.</desc>
+<rect width="800" height="330" rx="18" fill="#0f2740"/>
+<text x="400" y="40" text-anchor="middle" font-size="22" fill="#fff" font-weight="bold">Подтверждённые ориентиры 2026 года</text>
+<line x1="160" y1="80" x2="160" y2="270" stroke="#4fa6ec" stroke-width="3"/>
+<g font-size="15" fill="#fff">
+<circle cx="160" cy="105" r="8" fill="#4fa6ec"/><text x="30" y="110" fill="#9bb7d2">15 июля</text><text x="185" y="100">Опубликовано долгосрочное исследование</text><text x="185" y="122" fill="#9bb7d2">стимуляции мозга для восстановления осязания</text>
+<circle cx="160" cy="175" r="8" fill="#4fa6ec"/><text x="30" y="180" fill="#9bb7d2">сентябрь</text><text x="185" y="170">Valve открыла очередь бронирования</text><text x="185" y="192" fill="#9bb7d2">Steam Frame; цена и дата выхода не указаны</text>
+<circle cx="160" cy="245" r="8" fill="#e6a23c"/><text x="30" y="250" fill="#9bb7d2">23 сентября</text><text x="185" y="240">Meta представила VR Glasses</text><text x="185" y="262" fill="#9bb7d2">планируемый выход — весна 2027 года</text>
+</g>
+<text x="400" y="305" text-anchor="middle" font-size="13" fill="#9bb7d2">Исследование, очередь бронирования и анонс продукта — разные виды свидетельств</text>
+</svg>
