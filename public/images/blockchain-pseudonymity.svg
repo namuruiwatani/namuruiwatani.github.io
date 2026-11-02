@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 430" role="img" aria-labelledby="title desc">
+  <title id="title">Как публичные транзакции связывают с реальной личностью</title>
+  <desc id="desc">Схема показывает, как открытые данные блокчейна сопоставляют с внешними сведениями, получая гипотезу об атрибуции, которую необходимо проверять.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#b8371f"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="1098" height="428" rx="22" fill="#f5efe2" stroke="#221f1a" stroke-opacity=".14"/>
+  <text x="52" y="58" fill="#b8371f" font-family="system-ui, sans-serif" font-size="15" font-weight="700" letter-spacing="2">ПСЕВДОНИМНОСТЬ ≠ АНОНИМНОСТЬ</text>
+  <g font-family="system-ui, sans-serif" fill="#221f1a">
+    <rect x="48" y="105" width="270" height="180" rx="16" fill="#fffaf0" stroke="#221f1a" stroke-opacity=".2"/>
+    <circle cx="83" cy="145" r="17" fill="#b8371f"/>
+    <text x="83" y="151" fill="#fffaf0" text-anchor="middle" font-size="16" font-weight="700">1</text>
+    <text x="112" y="151" font-size="19" font-weight="700">Публичная цепочка</text>
+    <text x="72" y="196" fill="#514b41" font-size="16">адреса и переводы</text>
+    <text x="72" y="224" fill="#514b41" font-size="16">время и суммы</text>
+    <text x="72" y="252" fill="#514b41" font-size="16">связи между действиями</text>
+
+    <path d="M332 195h64" stroke="#b8371f" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="416" y="105" width="270" height="180" rx="16" fill="#fffaf0" stroke="#221f1a" stroke-opacity=".2"/>
+    <circle cx="451" cy="145" r="17" fill="#b8371f"/>
+    <text x="451" y="151" fill="#fffaf0" text-anchor="middle" font-size="16" font-weight="700">2</text>
+    <text x="480" y="151" font-size="19" font-weight="700">Внешний контекст</text>
+    <text x="440" y="196" fill="#514b41" font-size="16">публичные публикации</text>
+    <text x="440" y="224" fill="#514b41" font-size="16">сведения сервисов</text>
+    <text x="440" y="252" fill="#514b41" font-size="16">документы и расследования</text>
+
+    <path d="M700 195h64" stroke="#b8371f" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="784" y="105" width="270" height="180" rx="16" fill="#fffaf0" stroke="#221f1a" stroke-opacity=".2"/>
+    <circle cx="819" cy="145" r="17" fill="#b8371f"/>
+    <text x="819" y="151" fill="#fffaf0" text-anchor="middle" font-size="16" font-weight="700">3</text>
+    <text x="848" y="151" font-size="19" font-weight="700">Атрибуция</text>
+    <text x="808" y="196" fill="#514b41" font-size="16">вероятная связь</text>
+    <text x="808" y="224" fill="#514b41" font-size="16">с реальным человеком</text>
+    <text x="808" y="252" fill="#514b41" font-size="16">требует подтверждения</text>
+  </g>
+  <path d="M50 324h1000" stroke="#221f1a" stroke-opacity=".14"/>
+  <text x="550" y="372" fill="#514b41" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">Аналитическая гипотеза — не то же самое, что доказанная личность.</text>
+</svg>
