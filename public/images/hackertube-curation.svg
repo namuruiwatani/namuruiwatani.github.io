@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 430" role="img" aria-labelledby="title desc">
+  <title id="title">Как устроена идея HackerTube</title>
+  <desc id="desc">Рекомендации из комментариев Hacker News проходят отбор и становятся каталогом видео с отдельным интерфейсом поиска.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#b8371f"/></marker></defs>
+  <rect x="1" y="1" width="1098" height="428" rx="22" fill="#f5efe2" stroke="#221f1a" stroke-opacity=".14"/>
+  <text x="52" y="58" fill="#b8371f" font-family="system-ui,sans-serif" font-size="15" font-weight="700" letter-spacing="2">ДРУГОЙ СЛОЙ ДЛЯ ПОИСКА ВИДЕО</text>
+  <g font-family="system-ui,sans-serif" fill="#221f1a">
+    <rect x="48" y="105" width="270" height="180" rx="16" fill="#fffaf0" stroke="#221f1a" stroke-opacity=".2"/>
+    <text x="76" y="151" font-size="19" font-weight="700">Hacker News</text>
+    <text x="76" y="192" fill="#514b41" font-size="16">Комментарии и ссылки</text>
+    <text x="76" y="220" fill="#514b41" font-size="16">с рекомендациями видео</text>
+    <text x="76" y="260" fill="#b8371f" font-size="14" font-weight="600">выбор сообщества</text>
+    <path d="M332 195h64" stroke="#b8371f" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="416" y="105" width="270" height="180" rx="16" fill="#fffaf0" stroke="#221f1a" stroke-opacity=".2"/>
+    <text x="444" y="151" font-size="19" font-weight="700">Отбор и каталог</text>
+    <text x="444" y="192" fill="#514b41" font-size="16">фильтрация комментариев</text>
+    <text x="444" y="220" fill="#514b41" font-size="16">темы и список роликов</text>
+    <text x="444" y="260" fill="#b8371f" font-size="14" font-weight="600">по описанию Карпати</text>
+    <path d="M700 195h64" stroke="#b8371f" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="784" y="105" width="270" height="180" rx="16" fill="#fffaf0" stroke="#221f1a" stroke-opacity=".2"/>
+    <text x="812" y="151" font-size="19" font-weight="700">HackerTube</text>
+    <text x="812" y="192" fill="#514b41" font-size="16">поиск и рекомендации</text>
+    <text x="812" y="220" fill="#514b41" font-size="16">в интерфейсе для видео</text>
+    <text x="812" y="260" fill="#b8371f" font-size="14" font-weight="600">другой источник отбора</text>
+  </g>
+  <path d="M50 324h1000" stroke="#221f1a" stroke-opacity=".14"/>
+  <text x="550" y="372" fill="#514b41" font-family="system-ui,sans-serif" font-size="16" text-anchor="middle">Рекомендации меняются. Сообщество и его вкусы тоже влияют.</text>
+</svg>
